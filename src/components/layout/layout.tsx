@@ -1,8 +1,6 @@
 import Head from "next/head";
 
 import { LayoutProps } from "@interface/header";
-import Header from "./Header";
-import Footer from "./Footer";
 
 export const Layout = ({ hasTabBar, children, title, hasFooter }: LayoutProps) => {
   return (
@@ -17,6 +15,23 @@ export const Layout = ({ hasTabBar, children, title, hasFooter }: LayoutProps) =
       </div>
     </>
   );
+};
+
+const Header = () => {
+  return (
+    <header>
+      <h1>Logo</h1>
+      <Navigation />
+    </header>
+  );
+};
+
+const Footer = () => {
+  return <footer>Footer</footer>;
+};
+
+const Navigation = () => {
+  return <nav>Navigation</nav>;
 };
 
 export default Layout;

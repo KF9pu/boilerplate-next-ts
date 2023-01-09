@@ -6,7 +6,14 @@ import styles from "../styles/Home.module.css";
 export default function Home() {
   return (
     <Layout title="Home" hasTabBar>
-      <div>Home</div>
+      <div className="flex">
+        <div className="flex">Home</div>
+        <div>Home</div>
+        <div>Home</div>
+
+        <div className="flex">Home</div>
+        <div>Home</div>
+      </div>
     </Layout>
   );
 }
